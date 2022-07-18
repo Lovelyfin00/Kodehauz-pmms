@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="./css/dashboard-nav.css">
+   <link rel="stylesheet" href="./css/measurement.css">
+   
+   <script src="https://kit.fontawesome.com/eb25ac6d4f.js" crossorigin="anonymous"></script>
+   <title>Measurement</title>
+</head>
+<body>
+ 
+   
+   <div class="container-fluid" id="navHeader" style="padding: 0;">
+      <nav class="navbar p-4 navbar-expand-lg navbar-light align-content-center" style="background-color: #51A4F1;">
+         <button class="btn btn-primary me-lg-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></button>
+         <form class="d-flex ms-2" role="search" style="width:50%">
+            <div class="search-bar">
+               <i class="bi bi-search"></i>
+               <input class="form-control text-light input-field" type="search" placeholder="Search data" aria-label="Search" style="background-color: #51A4F1;">
+            </div>                    
+         </form>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end pe-3" id="navbarSupportedContent">
+               <div class="navbar-nav align-items-center" >
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mb-2 mb-lg-0 align-items-center" >
+                        <li class="nav-item">
+                           <a class="nav-link position-relative"  href="#"> <img src="./img/navMessage.png">
+                              <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                                 8
+                                 <span class="visually-hidden">unread messages</span>
+                               </span>
+                           </a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="#"><img src="./img/navNotify.png"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./img/img.png" class="me-2" style="border-radius: 100%;">
+                           <p class="mb-0 me-5 text-light">Admin</p>
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="index.html">Log out</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+
+         <!-- Contents of the webpage -->
+         <section id="measurement" class="pt-5 pb-5">
+            <!-- Voltage Representation -->
+            <div class="container borders voltage-flex d-flex px-0 py-5">
+               <div class="right">
+                  <div class="text-start">
+                     <p class="mb-0 ps-4 fw-bold  pt-3">Real Time measurement</p>
+                  </div>
+                  <hr>
+                  <div class="row flex-wrap mb-5 overflow-hidden">
+                     <div class="col-lg-4 col-md-6 col-sm-12 ps-lg-3 ps-md-4 ps-4 pt-lg-0 pt-3 pe-0">
+                        <img class="img ps-lg-0 ps-2" src="./img/voltage1.png" alt="">
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 ps-lg-3 ps-md-4 ps-4 pt-lg-0 pt-3 pe-0">
+                        <img class="img ps-lg-0 ps-2"src="./img/voltage2.png" alt="">
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 ps-lg-3 ps-md-4 ps-4 pt-lg-0 pt-3 pe-0">
+                        <img class="img ps-lg-0 ps-2" src="./img/voltage3.png" alt="">
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 ps-lg-3 ps-md-4 ps-4 pt-lg-0 pt-3 pe-0 pt-lg-4  ">
+                        <img class="img ps-lg-0 ps-2" src="./img/voltage4.png" alt="">
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 ps-lg-3 ps-md-4 ps-4 pt-lg-0 pt-3 pe-0 pt-lg-4  ">
+                        <img class="img ps-lg-0 ps-2" src="./img/voltage5.png" alt="">
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 ps-lg-3 ps-md-4 ps-4 pt-lg-0 pt-3 pe-0 pt-lg-4  ">
+                        <img class="img ps-lg-0 ps-2" src="./img/voltage6.png" alt="">
+                     </div>
+                  </div>   
+               </div>
+               <div class="left ms-lg-5" >
+                  <div class="borders mb-3 mt-lg-0 mt-3"> 
+                     <div class="d-flex justify-content-between align-items-center px-1 pt-2">
+                        <div>
+                           <p class="mb-0 fw-bold ps-2">Previous Parameter log</p>
+                        </div>   
+                                    
+                        <div class="position-relative">
+                           <div class="position-absolute" style="top: 9px; left: 5px; ">
+                              <i class="fa-solid fa-calendar-days"></i>
+                          </div>
+                           <select class=" form-select  ps-4 h-30px"  aria-label="multiple select example">
+                              <option value="1" selected >Jan</option>
+                              <option value="2">Feb</option>
+                              <option value="3">Mar</option>
+                              <option value="4">Apr</option>
+                              <option value="5">May</option>
+                              <option value="3">Jun</option>
+                              <option value="3">Jul</option>
+                              <option value="3">Aug</option>
+                              <option value="3">Sep</option>
+                              <option value="3">Oct</option>
+                              <option value="3">Nov</option>
+                              <option value="3">Dec</option>
+                            </select>
+                        </div>
+                     </div>               
+                    
+                     <hr>
+      
+                     <div class="d-flex p-3 justify-content-between">
+                        <div >
+                           <ul class="list-unstyled">
+                              <li class="voltage pb-2 fw-bold">Voltage <span class="ps-3">220.00V</span></li>
+                              <li class="voltage pb-2 fw-bold">Current <span class="ps-3">25.00A</span></li>
+                              <li class="voltage pb-2 fw-bold">Power <span class="ps-3">6.00Kw</span></li>
+                              <li class="voltage pb-2 fw-bold">Frequency <span class="ps-3">50.00Hz</span></li>
+                              <li class="voltage pb-2 fw-bold">Temperature<span class="ps-3">35.00 oC</span></li>
+                              <li class="voltage pb-2 fw-bold">Amplititude<span class="ps-3">6.00 mm/s</span></li>
+                           </ul>
+                        </div>
+                        <div class="ps-4">
+                           <div class="d-flex">
+                              <div>
+                                 <img src="./img/measurmentTemperature.png" alt="">
+                              </div>                       
+                              <span class="ps-3">Coolant Temperature  <br>
+                                 51.O oc</span>
+                              </div>
+                           <div class="d-flex">
+                              <div>
+                                 <img src="./img/measurmentEngine-oil.png" alt="">
+                              </div>                       
+                              <span class="ps-3">Oil Pressure <br>
+                                 4.5 Bar</span>
+                           </div>
+                           <div class="d-flex">
+                              <div>
+                                 <img src="./img/measurmentGas-station.png" alt="">
+                              </div>                       
+                              <span class="ps-3">Fuel Used  <br>
+                                 32.2 litres</span>
+                           </div>
+                           <div class="d-flex">
+                              <div>
+                                 <img src="./img/measurmentCar-battery.png" alt="">
+                              </div>                       
+                              <span class="ps-3">Battery Level  <br>
+                                 25.2 V</span>
+                           </div>
+                           <div class="d-flex">
+                              <div>
+                                 <img src="./img/measurmentDelivery-time.png" alt="">
+                              </div>                       
+                              <span class="ps-3">Run Hours  <br>
+                                 309 h</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="borders">
+                     <div class="d-flex justify-content-evenly pt-3">
+                        <div class="img-circle text-center">
+                           <img src="./img/measurementExpand.png" class="pt-3">
+                        </div>
+                        <p>Generator Map Location</p>
+                        <div class="img-circle text-center">
+                           <img src="./img/measurementVertical.png" class="pt-3">
+                        </div>
+                     </div>
+                     <hr>
+                     <section class="location position-relative p-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127151.14858192929!2d7.630591207955134!3d5.188011611347947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042adf7eb5bf039%3A0x2478b29885742ad7!2sIkot%20Ekpene!5e0!3m2!1sen!2sng!4v1657600696114!5m2!1sen!2sng" 
+                        width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="point position-absolute pe-4 pt-2 ps-2 pb-2 bg-light">
+                           <p class="m-0">KH Generator 1</p>
+                           <p class="m-0">Ikot Ema</p>
+                        </div>
+                    </section>
+                  </div>
+               </div>
+            </div> 
+      
+      
+            <!-- Graph Representation -->
+            <div class="container table-borders mb-3 mt-3">
+               <!-- Radio buttons -->
+               <div class="d-flex justify-content-evenly radio pt-4 ps-lg-2 ps-5">
+                  <div class="form-check">
+                     <input class="form-check-input " type="radio" name="flexRadioDefault" onclick="graphMinutes()" id="flexRadioDefault1">
+                     <label class="form-check-label pe-2" for="flexRadioDefault1">
+                       Minute
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" onclick="graphHour()" id="flexRadioDefault1">
+                     <label class="form-check-label pe-2" for="flexRadioDefault1">
+                       Hour
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" onclick="graphDay()"  id="flexRadioDefault1">
+                     <label class="form-check-label pe-2" for="flexRadioDefault1">
+                       Day
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" onclick="graphWeekly()"id="flexRadioDefault1">
+                     <label class="form-check-label pe-2" for="flexRadioDefault1">
+                       Week
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" onclick="graphMonthly()" id="flexRadioDefault1">
+                     <label class="form-check-label pe-2" for="flexRadioDefault1">
+                       Month
+                     </label>
+                   </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" onclick="graphYearly()"id="flexRadioDefault1">
+                     <label class="form-check-label pe-2" for="flexRadioDefault1">
+                       Year
+                     </label>
+                   </div>
+               </div>
+               <div id="chart" class="w-100">                      
+                  
+               </div>
+               <!-- scrolling button -->
+               <div class="text-center pb-4 pt-3" id="change-graph">            
+                  <i class="bi bi-caret-left-fill me-5"  onclick="returnGraph()"></i>
+                  <i class="bi bi-caret-right-fill ms-5"   onclick="handleGraph()" ></i>
+               </div>            
+            </div>
+            
+            <!-- Table Representation -->
+            <div class="container table-borders p-0">
+               <div class="text-start">
+                  <p class="mb-0 fw-bold ps-3 pt-3">Real Time measurement</p>
+               </div>
+         
+                <table class="table  table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Parameters</th>
+                      <th scope="col">Values</th>
+                      <th scope="col">Units</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Time</th>                
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="box">
+                      <th scope="row">
+                        <div class="">
+                           <input class="form-check-input"  type="checkbox" id="checkbox" value="" aria-label="...">
+                         </div>
+                      </th>
+                      
+                      <td >Fuel Filled</td>
+                      <td >1000</td>
+                      <td >Litres</td>
+                      <td >2021-05-16 </td>
+                      <td >08:24</td>
+                    </tr>
+                    <tr class="box2">
+                      <th scope="row">
+                     <div class="">
+                        <input class="form-check-input"  type="checkbox" id="checkboxes" value="" aria-label="...">
+                      </div></th>
+                      <td>Fuel Level</td>
+                      <td>1000</td>
+                      <td>Litres</td>
+                      <td>2021-05-16 </td>
+                      <td>08:24</td>
+                    </tr>
+                    <tr class="box3">
+                      <th scope="row">
+                     <div class="">
+                        <input class="form-check-input"  type="checkbox"  value="" aria-label="...">
+                      </div></th>
+                      <td >Run Hours</td>
+                      <td>1000</td>
+                      <td>Litres</td>
+                      <td>2021-05-16 </td>
+                      <td>08:24</td>
+                    </tr>
+                    <tr class="box4">
+                      <th scope="row">
+                     <div class="">
+                        <input class="form-check-input"  type="checkbox" class="checkbox" value="" aria-label="...">
+                      </div></th>
+                      <td>Coolant Temperature</td>
+                      <td>1000</td>
+                      <td>Litres</td>
+                      <td>2021-05-16 </td>
+                      <td>08:24</td>
+                    </tr>
+                    <tr class="box5">
+                      <th scope="row">
+                     <div class="">
+                        <input class="form-check-input"  type="checkbox" class="checkbox" value="" aria-label="...">
+                      </div></th>
+                      <td>Battery Level</td>
+                      <td>1000</td>
+                      <td>Litres</td>
+                      <td>2021-05-16 </td>
+                      <td>08:24</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="text-end  pb-4"> <a href="#"class="text-decoration-none pe-4 text-black-50" >View All</a></p>         
+            </div>            
+           
+         </section>
+   </div>
+            <!-- Contains the side bar menu -->
+   <div class="offcanvas offcanvas-start " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">   
+
+      <div class="offcanvas-header">
+         <h5 class="offcanvas-title text-center" id="offcanvasScrollingLabel"> <img src="./img/dashHeliumLogo.png" class="w-100">
+         </h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+         <div id="sidebar">      
+            <div class="mt-5">
+               <h6>MAIN-MENU</h6>
+               <div class="dashContent ">                  
+                  <div class="d-flex align-items-center">                       
+                     <img src="./img/dashboard.png" class="me-3">                           
+                     <a href="#" class="ms-2 mb-0 ">Dashboard</a>
+                  </div>
+
+                  <br>
+
+                  <div class="sidenav">
+                     <button class="dropdown-btn d-flex align-items-center" >
+                        <img src="./img/dashRealTimeInfo.png" class="me-3">
+                     <a href="#" class="me-4 RealTimeNoHover"> Real Time Info </a>
+                        <i class="bi bi-caret-down-fill"></i>
+                     </button>
+                     <div class="dropdown-container">
+                        <a href="#" class="mb-4 mt-2 selected-nav">Measurement</a>
+                        <a href="#" class="mb-4">Wave Form</a>
+                        <a href="#" class="mb-4">Analytics</a>
+                        <a href="#" class="mb-4">Alarm</a>
+                        <a href="#" class="mb-4">Map</a>
+                     </div>
+                  </div>
+
+                  <br>
+               
+                  <div class=" notifications d-flex align-items-center mt-5 mb-2">
+                     <a href="#" class="position-relative"> <img src="./img/dashNotification.png" class="me-3 ms-0">   
+                        <span class="position-absolute top-0 start-0 translate-middle p-2 bg-danger border border-light rounded-circle">
+                           <span class="visually-hidden">New alerts</span>
+                         </span>                        
+                        Notifications
+                     </a>
+                  </div>
+               </div>
+              
+               <br>
+               <br>
+
+               <h6>PREFERENCES</h6>
+               <div class="dashContent">
+                  <div class=" dashUser mb-2 mt-2 d-flex align-items-center">
+                     <img src="./img/dashUser.png" class="me-3">
+                     <a href="#">User</a>
+                  </div>
+
+                  <br>
+
+                  <div class=" dashSetting d-flex align-items-center pb-5">
+                     <img src="./img/dashSetting.png" class="me-2">
+                     <a href="#">Settings</a>
+                  </div>
+               </div>
+            </div>             
+         </div>
+      </div>
+   </div>
+      
+          
+   
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>  
+<script src="./js/dashboard-nav.js"></script>
+<script src="./js/measurement.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'roboto';
+}
+.bg-bdy{
+    background: #F5F5F5;
+}
+.gen {
+    font-size:12px;
+}
+.card {
+    border: none;
+}
+.bg-alarm {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15);
+    border-radius: 8px;
+}
+.first-estimate{
+    background: linear-gradient(270deg, #FBB675 0%, #EE7808 100%);
+    border-radius: 8px;
+} 
+
+.second-estimate{
+    background: linear-gradient(90deg, #FF050F 7.47%, #ED8A8E 109.73%);
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+} 
+.third-estimate{
+    background: linear-gradient(90deg, #8262FF 50%, #B19DFF 103.15%);
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+} 
+.fourth-estimate{
+    background: linear-gradient(90deg, #298AFF 50%, #9BCCF9 103.15%);
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+} 
+
+.form-check-input:checked[type=radio] {
+    background-image: none !important;
+}
+.data-text, .data-text-two, .data-text-three, .data-text-four, .data-text-five, .data-text-six, .data-text-seven, .data-text-eight, .data-text-nine{
+    font-size: 12px;
+    color: #747474;
+}
+.data-date, .data-date-two, .data-date-three, .data-date-four, .data-date-five, .data-date-six, .data-date-seven, .data-date-eight{
+    font-size: 12px;
+}
+

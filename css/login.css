@@ -1,0 +1,78 @@
+.rounded {
+    border-radius: 39px !important;
+}
+
+.rounded-pill {
+    border-radius: 12px !important;
+}
+
+.text-primary {
+    color: #298AFF !important;
+}
+
+.text-danger {
+    color: #ED1C24 !important;
+}
+
+.btn-danger {
+    background-color: #ED1C24 !important;
+}
+
+.border-danger {
+    border: 3px solid #ED1C24 !important;
+    height: 100px;
+    width: 100px;
+    padding: 0.2rem;
+}
+
+.error-area {
+    visibility: hidden;
+}
+
+.error-area {
+    font-size: 1.05rem !important;
+    font-style: italic;
+}
+
+@media screen and (max-width:1024px){
+    #sign-up{
+        font-size: 1rem !important;
+        padding: 5px 0rem !important;
+        width: 50% !important;
+        text-align: center !important;
+    }
+    #reset{
+        width: 60% !important;
+        padding: 3px 0 !important;
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+}
+
+@media(max-width: 460px) {
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+        text-align: right;
+        padding-top: 0.8rem;
+    }
+
+    .navbar>.container {
+        align-items: flex-start !important;
+    }
+    .justify-content-end{
+        justify-content: flex-start !important;
+        margin-left: 22px;
+    }
+}
+
+@media(max-width: 370px) {
+    .fs-5 {
+        font-size: 0.85rem !important;
+    }
+    .navbar-text {
+        font-size: 0.8rem;
+    }
+}

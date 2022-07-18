@@ -1,0 +1,120 @@
+.h4, h4 {
+    margin-bottom: 10px;
+    color: #007AFF;
+    font-family: open sans;
+}
+
+p {
+    font-family: open sans;
+    font-weight: 400px;
+}
+
+.get-started{
+    background-color: #FFF1F2 !important;
+    color: #EC1C24 !important;
+}
+
+.footer-section {
+    background: #0081FE;
+}
+.footer-section p{
+    font-family: 'Assistant', sans-serif !important;
+}
+.mobile i{
+    font-size: 12px !important;
+}
+
+.border-bottom {
+    padding-top: 80px !important;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: 0.3;
+}
+
+.border-top {
+    color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: 0.2;
+}
+
+.footer-img {
+    width: 40% !important;
+}
+
+@media (max-width: 426px) {
+    .flip {
+        flex-direction: column-reverse;
+        }
+    .system {
+        display: none;
+    }
+    .fw-bolder {
+        font-size: 24px !important;
+    }
+    .telephone {
+        display: none;
+    } 
+    .last-line {
+        display: none;
+    }
+    p {
+        font-size: 14px;
+    }
+    .h4, h4 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-img{
+        width: unset !important;
+        width: fit-content !important;
+    }
+    .mobile {
+        display: none !important;
+    }
+    .address {
+        display: none !important;
+    }
+    .line {
+        display: none !important;
+    }
+    .navbar-brand {
+        display: unset !important;
+    }
+    .fw-bolder {
+        font-size: 36px !important;
+    }
+    p {
+        font-size: 16px;
+    }
+    .h4, h4 {
+        font-size: 29px;
+    }
+    .login-link1{
+        display: none !important;
+    }
+    .login-link{
+        display: unset !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .fw-bolder {
+        font-size: 54px !important;
+    }
+    p {
+        font-size: 18px;
+    }
+    .h4, h4 {
+        font-size: 29px;
+    }
+    .login-link1{
+        display: none !important;
+    }
+    .login-link{
+        display: unset !important;
+    }
+}

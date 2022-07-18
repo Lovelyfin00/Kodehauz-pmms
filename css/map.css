@@ -1,0 +1,12 @@
+#print{
+    background-color: #FBB500 !important;
+}
+#download{
+    background-color: #1BA0E2 !important;
+}
+
+@media screen and (min-width:767px){
+    #select-date{
+        width: 75% !important;
+    }
+}
