@@ -1,3 +1,9 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
 .btn-primary{
    height: 45px!important;
    width: 55px!important;
@@ -119,11 +125,13 @@ color: #262626;
 background: linear-gradient(270deg, rgba(0, 133, 255, 0.4) -13.6%, rgba(0, 133, 255, 0.200657) 24.28%, rgba(0, 133, 255, 0) 50%);
 padding: 10px;
 }
+
 .selected-nav{
    color: #262626;
-background: linear-gradient(270deg, rgba(0, 133, 255, 0.4) -13.6%, rgba(0, 133, 255, 0.200657) 24.28%, rgba(0, 133, 255, 0) 50%);
-padding: 10px;
+   background: linear-gradient(270deg, rgba(0, 133, 255, 0.4) -13.6%, rgba(0, 133, 255, 0.200657) 24.28%, rgba(0, 133, 255, 0) 50%);
+   padding: 10px;
 }
+
 .dropdown-btn:hover{
    color: #262626;
    background: linear-gradient(270deg, rgba(0, 133, 255, 0.4) -13.6%, rgba(0, 133, 255, 0.200657) 24.28%, rgba(0, 133, 255, 0) 50%);
