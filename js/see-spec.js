@@ -1,12 +1,3 @@
-function seeOtherPetrolSpec(){
-
-}
-seeOtherPetrolSpec()
-
-function seeOtherDieselSpec(){
-    document.getElementById('diesel-img').src = `./img/G12 1.png`;
-}
-seeOtherDieselSpec()
 
 function seePetrolGen(){
 // petrol Gen SPace

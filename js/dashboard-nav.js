@@ -14,3 +14,14 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+
+// Getting the username from Local Storage
+let newUserName = window.localStorage.getItem("dataBase")
+newUserName = JSON.parse(newUserName);
+console.log(newUserName)
+console.log(newUserName[0].username)
+let newUserNameSaved = newUserName[0].username;
+
+let userName = document.querySelector("#newUserName");
+userName.textContent = newUserNameSaved;

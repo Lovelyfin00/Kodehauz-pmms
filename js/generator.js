@@ -70,7 +70,7 @@ function petrolGenUI(){
                 </div>
                 <div class="card-image d-flex justify-content-center align-items-center border border-1">
                     <div class="card-image-2">
-                        <img src="./img/red-gen.png" class="card-img-top" alt="...">
+                        <img src="./img/red-gen.png" id="petrol-img" class="card-img-top" alt="...">
                     </div>
                 </div>
                 <div class="info d-flex justify-content-between ps-3 mt-1">
@@ -243,7 +243,7 @@ function dieselGenUI(){
                 </div>
                 <div class="card-image d-flex justify-content-center align-items-center border border-1">
                     <div class="card-image-2">
-                        <img src="./img/G12 1.png" class="card-img-top" alt="...">
+                        <img src="./img/G12 1.png" id="diesel-img"class="card-img-top" alt="...">
                     </div>
                 </div>
                 <div class="info d-flex justify-content-between ps-3 mt-1">
@@ -427,8 +427,8 @@ function seeDieselGen(){
 
 
 function seeOtherPetrolSpec(){
-    window.location.href = 'see-spec.html'
+    window.location.href = 'see-other-petrol-spec.html'
 }
 function seeOtherDieselSpec(){
-    window.location.href = 'see-spec.html'
+    window.location.href = 'see-other-diesel-spec.html'
 }
